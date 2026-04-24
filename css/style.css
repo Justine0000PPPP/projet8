@@ -89,3 +89,26 @@ body {
   color: #94a3b8;
 }
 
+
+/* =========================
+   MOBILE (ajustement propre)
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav {
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    gap: 18px;
+  }
+
+  .footer-content a {
+    font-size: 13px;
+  }
+}

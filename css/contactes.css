@@ -133,3 +133,61 @@ body {
   margin-top: 15px;
   color: #94a3b8;
 }
+
+
+/* =========================
+   RESPONSIVE CONTACT
+========================= */
+
+@media (max-width: 768px) {
+
+  /* ===== TITRE ===== */
+  .contact-title h1 {
+    font-size: 28px; /* réduit le titre */
+  }
+
+  /* ===== FORMULAIRE ===== */
+  .contact-form {
+    padding: 10px;
+  }
+
+  .contact-form form {
+    width: 90%;          /* formulaire plus large sur mobile */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* bouton */
+  .contact-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* ===== INFO CONTACT ===== */
+  .contact-info {
+    padding: 15px;
+    margin: 40px auto;
+    font-size: 14px;
+  }
+
+  .contact-info h2 {
+    font-size: 18px;
+  }
+
+  /* ===== NAV ===== */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

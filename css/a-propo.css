@@ -102,3 +102,44 @@ body {
   margin-top: 15px;
   color: #94a3b8;
 }
+
+
+/* =========================
+   RESPONSIVE À PROPOS
+========================= */
+
+@media (max-width: 768px) {
+
+  /* ===== TITRE ===== */
+  .about-title h1 {
+    font-size: 28px; /* réduit le titre */
+  }
+
+  /* ===== BLOC PRINCIPAL ===== */
+  .about-main {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ===== BLOCS COMPÉTENCES + QUALITÉS ===== */
+  .about-skills,
+  .about-qualities {
+    display: block;        /* passe en colonne */
+    width: 90%;            /* prend presque toute la largeur */
+    margin: 20px auto;     /* centrage */
+  }
+
+  /* ===== NAVBAR ===== */
+  .nav {
+    flex-direction: column;  /* liens en colonne */
+    gap: 10px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

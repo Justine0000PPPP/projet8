@@ -95,3 +95,46 @@ body {
   margin-top: 15px;
   color: #94a3b8;
 }
+
+
+/* =========================
+   RESPONSIVE COMPÉTENCES
+========================= */
+
+@media (max-width: 768px) {
+
+  /* ===== TITRE ===== */
+  .skills-title h1 {
+    font-size: 28px; /* titre plus petit */
+  }
+
+  /* ===== BLOCS COMPÉTENCES ===== */
+  .skills-section {
+    display: block;        /* passe en colonne */
+    width: 90%;            /* prend toute la largeur */
+    margin: 15px auto;     /* centrage + espace */
+  }
+
+  /* ===== TITRES BLOCS ===== */
+  .skills-section h2 {
+    font-size: 16px;
+  }
+
+  /* ===== LISTES ===== */
+  .skills-section li {
+    font-size: 14px;
+  }
+
+  /* ===== NAVBAR ===== */
+  .nav {
+    flex-direction: column; /* menu vertical */
+    gap: 10px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}

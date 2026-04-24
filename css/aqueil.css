@@ -1,6 +1,3 @@
-/* =========================
-   PROJETS
-========================= */
 
 .projets {
   display: flex;
@@ -31,7 +28,6 @@
   transform: scale(1.05);
 }
 
-/* TEXTE CENTRÉ SUR IMAGE (FIX FINAL) */
 .project-link {
   position: absolute;
   top: 0;
@@ -58,9 +54,6 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* =========================
-   BOUTON MES PROJETS
-========================= */
 
 .project-button {
   display: flex;
@@ -87,9 +80,7 @@
   color: #0b1120;
 }
 
-/* =========================
-   PRE CONTENT (haut)
-========================= */
+
 
 .pre-content {
   display: flex;
@@ -101,13 +92,13 @@
   height: auto;
   padding: 40px 20px;
 
-  margin-bottom: 7px; /* 🎯 réduit espace vers le bas */
-  padding-bottom: 7px; /* 🎯 AJUSTE ICI si tu veux + ou - d’espace */
+  margin-bottom: 7px; 
+  padding-bottom: 7px;
 }
 
 /* titre */
 .pre-content h1 {
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
 }
 
 /* texte */
@@ -117,35 +108,79 @@
   margin: 0 auto;
 }
 
-/* =========================
-   ABOUT CONTENT (bas)
-========================= */
 
 .about-content {
   text-align: center;
   max-width: 700px;
   margin: 0 auto;
 
-  margin-top: 0; /* 🎯 réduit espace au-dessus */
-  padding-top: 0px; /* 🎯 AJUSTE ICI aussi si besoin */
+  margin-top: 0; 
+  padding-top: 0px; 
 }
 
-/* espace entre les paragraphes */
 .about-content p {
   margin: 8px 0;
 }
 
-/* =========================
-   CONTENEUR GLOBAL
-========================= */
 
 .home-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  gap: 2px; /* 🔥🔥🔥 PRINCIPAL : MODIFIE CETTE VALEUR */
-  /* 👉 2px = très serré */
-  /* 👉 10px = normal */
-  /* 👉 30px = aéré */
+  gap: 2px; 
+}
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  /* ===== SECTION PROJETS ===== */
+  .projets {
+    flex-direction: column;   /* les cartes passent en colonne */
+    align-items: center;
+    gap: 25px;                /* réduit l’espace entre cartes */
+    padding: 30px 10px;
+  }
+
+  .project-card {
+    width: 90%;               /* prend presque toute la largeur */
+  }
+
+  /* ===== HERO / PRE CONTENT ===== */
+  .pre-content {
+    padding: 30px 15px;
+  }
+
+  .pre-content h1 {
+    font-size: 28px;          /* titre plus petit sur mobile */
+  }
+
+  .pre-content p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ===== ABOUT ===== */
+  .about-content {
+    padding: 0 15px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  /* ===== BOUTON ===== */
+  .project-button {
+    margin: 40px 0;
+  }
+
+  .project-button .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
 }
