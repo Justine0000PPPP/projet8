@@ -1,0 +1,167 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1120;
+  color: white;
+  text-align: center;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+/* =========================
+   TITRE
+========================= */
+
+.projects-title {
+  padding: 60px 20px 30px;
+}
+
+.projects-title h1 {
+  font-size: 40px;
+}
+
+/* =========================
+   SECTION PROJET
+========================= */
+
+.project-detail {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.project-detail p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* =========================
+   CARROUSEL
+========================= */
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+/* images */
+.carousel-img {
+  display: none;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* image active */
+.carousel-img.active {
+  display: block;
+}
+
+/* boutons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  border-radius: 8px;
+}
+
+/* gauche */
+.prev {
+  left: 10px;
+}
+
+/* droite */
+.next {
+  right: 10px;
+}
+
+/* hover */
+.prev:hover,
+.next:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   LIEN PROJET
+========================= */
+
+.project-detail a {
+  display: inline-block;
+  margin-top: 20px;
+
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.project-detail a:hover {
+  background: white;
+  color: #0b1120;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-content a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: white;
+}
+
+.footer-text {
+  margin-top: 15px;
+  color: #94a3b8;
+}

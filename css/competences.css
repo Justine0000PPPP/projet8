@@ -1,0 +1,97 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1120;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+/* TITRE CENTRÉ */
+.skills-title {
+  padding: 60px 20px 30px;
+}
+
+.skills-title h1 {
+  font-size: 40px;
+}
+
+/* CONTENEUR DES BLOCS (TOUT SUR UNE LIGNE) */
+body {
+  overflow-x: hidden;
+}
+
+.skills-section {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 220px;
+  margin: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* TITRES DES BLOCS */
+.skills-section h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* LISTES */
+.skills-section ul {
+  list-style: none;
+  padding: 0;
+  color: #cbd5e1;
+}
+
+.skills-section li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-content a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: white;
+}
+
+.footer-text {
+  margin-top: 15px;
+  color: #94a3b8;
+}
