@@ -10,32 +10,36 @@
  
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/projet.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/footer.css">
   <script src="js/projets.js"></script>
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header class="header">
-  <nav class="nav">
-    <a href="aquiel.html">Accueil</a>
-    <a href="a-prop.html">À propos</a>
-    <a href="competences.html">Compétences</a>
-    <a href="projet.html">Projets</a>
-    <a href="contactes.html">Contact</a>
+<header class="navbar">
+  <div class="logo"></div>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#projects-page">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 </header>
 
 <!-- TITRE -->
-<section class="projects-title">
+<section class="projects-title" id="projects-page">
   <h1>Mes projets</h1>
 </section>
 
 <!-- ===================== HERMES ===================== -->
 <section id="hermes" class="project-detail">
 
-  <h2>Hermes</h2>
+  <h2>COSE 360</h2>
 
   <p>
     Application développée en Python avec Django permettant d’envoyer des emails groupés.
@@ -52,20 +56,20 @@
   <!-- CARROUSEL Hermes -->
   <div class="carousel" data-project="hermes">
 
-    <img src="images/hermes1.png" class="carousel-img active" alt="Hermes 1">
-    <img src="images/hermes2.png" class="carousel-img" alt="Hermes 2">
-    <img src="images/hermes3.png" class="carousel-img" alt="Hermes 3">
-    <img src="images/hermes4.png" class="carousel-img" alt="Hermes 4">
+    <img src="images/cose360-1.png" class="carousel-img active" alt="COSE 360 1">
+    <img src="images/cose360-2.png" class="carousel-img" alt="COSE 360 2">
+    <img src="images/cose360-3.png" class="carousel-img" alt="COSE 360 3">
+    <img src="images/cose360-4.png" class="carousel-img" alt="COSE 360 4">
 
     <button class="prev">‹</button>
     <button class="next">›</button>
 
   </div>
 
-  <!-- MODAL HERMES -->
-  <div id="modal-hermes" class="modal">
+  <!-- MODAL COSE 360 -->
+  <div id="modal-cose360" class="modal">
     <div class="modal-content">
-      <img id="modal-img-hermes" class="modal-img" src="" alt="Hermes">
+      <img id="modal-img-cose360" class="modal-img" src="" alt="COSE 360">
       <button class="modal-prev">‹</button>
       <button class="modal-next">›</button>
       <button class="close">&times;</button>
@@ -117,14 +121,27 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer>
   <div class="footer-content">
-    <a href="frisonjustine@gmail.com">Email</a>
-    <a href="https://github.com/" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-  </div>
+    <p class="footer-text">© 2026 Quentin - Portfolio Développeur</p>
 
-  <p class="footer-text">© 2026 - Mon Portfolio</p>
+    <div class="social-links">
+      <a class="social-item" href="#">
+        <span>LinkedIn</span>
+        <img src="images/LinkedIn_icon.svg" alt="LinkedIn">
+      </a>
+
+      <a class="social-item" href="https://github.com/Justine0000PPPP">
+        <span>GitHub</span>
+        <img src="images/github-icon-logo-png_seeklogo-503247.png" alt="GitHub">
+      </a>
+
+      <a class="social-item" href="#">
+        <span>Email</span>
+        <img src="images/Email_icon.svg" alt="Email">
+      </a>
+    </div>
+  </div>
 </footer>
 
 </body>

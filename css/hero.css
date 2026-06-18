@@ -1,0 +1,88 @@
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+#hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* CONTENU */
+
+.hero-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+/* TEXTE */
+
+.hero-text {
+    flex: 1;
+}
+
+
+/* TITRE */
+
+.hero-text h1 {
+    font-size: 4rem;
+
+    margin-bottom: 20px;
+}
+
+
+/* PARAGRAPHE */
+
+.hero-text p {
+    margin-bottom: 30px;
+
+    font-size: 1.1rem;
+
+    max-width: 500px;
+}
+
+
+/* BOUTON */
+
+.hero-button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #00bfff;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER */
+
+.hero-button:hover {
+    background-color: #0099cc;
+}
+
+
+/* IMAGE */
+
+.hero-image {
+    flex: 1;
+}
+
+
+/* IMAGE */
+
+.hero-image img {
+    max-width: 500px;
+
+    margin: auto;
+}

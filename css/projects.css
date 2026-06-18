@@ -1,0 +1,64 @@
+/* ========================= */
+/* PROJECTS */
+/* ========================= */
+
+#projects-preview h2 {
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    font-size: 2.5rem;
+}
+
+
+/* CARROUSEL */
+
+.projects-carousel {
+    display: flex;
+
+    gap: 30px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+}
+
+
+/* CARD */
+
+.project-card {
+    min-width: 300px;
+
+    background-color: #1a1a1a;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER */
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* IMAGE */
+
+.project-card img {
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* TITRE */
+
+.project-card h3 {
+    padding: 20px;
+
+    text-align: center;
+}

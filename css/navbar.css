@@ -1,0 +1,56 @@
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(15, 15, 15, 0.9);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* MENU */
+
+.nav-links ul {
+    display: flex;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+
+/* LIENS */
+
+.nav-links a {
+    transition: 0.3s;
+}
+
+
+/* HOVER */
+
+.nav-links a:hover {
+    color: #00bfff;
+}

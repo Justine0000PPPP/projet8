@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "name": "HTML",
+        "level": "90%",
+        "icon": "./assets/icons/html-logo.png",
+        "description": "Création de structures web modernes et accessibles."
+    },
+
+    {
+        "id": 2,
+        "name": "CSS",
+        "level": "85%",
+        "icon": "./assets/icons/css-logo.png",
+        "description": "Mise en page responsive et animations modernes."
+    },
+
+    {
+        "id": 3,
+        "name": "JavaScript",
+        "level": "80%",
+        "icon": "./assets/icons/javascript-logo.png",
+        "description": "Développement d’interactions dynamiques et fluides."
+    },
+
+    {
+        "id": 4,
+        "name": "Git",
+        "level": "75%",
+        "icon": "./assets/icons/git-logo.png",
+        "description": "Gestion de versions et travail collaboratif."
+    },
+
+    {
+        "id": 5,
+        "name": "Figma",
+        "level": "70%",
+        "icon": "./assets/icons/figma-logo.png",
+        "description": "Création de maquettes et interfaces UI/UX."
+    },
+
+    {
+        "id": 6,
+        "name": "Responsive Design",
+        "level": "85%",
+        "icon": "./assets/icons/responsive-logo.png",
+        "description": "Adaptation des interfaces sur mobile, tablette et desktop."
+    }
+]

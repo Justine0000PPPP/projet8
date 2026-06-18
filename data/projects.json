@@ -1,0 +1,85 @@
+[
+    {
+        "id": 1,
+        "title": "Portfolio Développeur",
+        "image": "./assets/images/projects/project-1.jpg",
+        "description": "Création d’un portfolio moderne responsive avec HTML, CSS et JavaScript.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "github": "#",
+        "demo": "#"
+    },
+
+    {
+        "id": 2,
+        "title": "Dashboard Admin",
+        "image": "./assets/images/projects/project-2.jpg",
+        "description": "Interface d’administration moderne avec statistiques et graphiques.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "github": "#",
+        "demo": "#"
+    },
+
+    {
+        "id": 3,
+        "title": "Site E-commerce",
+        "image": "./assets/images/projects/project-3.jpg",
+        "description": "Création d’un site e-commerce responsive avec système de panier.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "github": "#",
+        "demo": "#"
+    },
+
+    {
+        "id": 4,
+        "title": "Application Météo",
+        "image": "./assets/images/projects/project-4.jpg",
+        "description": "Application météo connectée à une API externe.",
+        "technologies": [
+            "JavaScript",
+            "API",
+            "CSS"
+        ],
+        "github": "#",
+        "demo": "#"
+    },
+
+    {
+        "id": 5,
+        "title": "Landing Page Moderne",
+        "image": "./assets/images/projects/project-5.jpg",
+        "description": "Landing page animée avec design moderne et responsive.",
+        "technologies": [
+            "HTML",
+            "CSS",
+            "Animations"
+        ],
+        "github": "#",
+        "demo": "#"
+    },
+
+    {
+        "id": 6,
+        "title": "Galerie Photo",
+        "image": "./assets/images/projects/project-6.jpg",
+        "description": "Galerie d’images avec filtres, lightbox et animations.",
+        "technologies": [
+            "JavaScript",
+            "CSS",
+            "JSON"
+        ],
+        "github": "#",
+        "demo": "#"
+    }
+]
