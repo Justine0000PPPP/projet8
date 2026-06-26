@@ -508,3 +508,8 @@ footer {
 .social-links a:hover {
     color: #00bfff;
 }
+
+#projects-preview {
+    padding-top: 20px;
+    padding-bottom: 100px; /* ou la valeur que tu veux */
+}

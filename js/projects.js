@@ -1,131 +1,30 @@
 // =========================
 // PROJECTS.JS
-// Gestion des projets JSON
-// =========================
-
-
-// =========================
-// DOM LOADED
+// Carrousel des images de projets
 // =========================
 
 document.addEventListener('DOMContentLoaded', () => {
+    const carousels = document.querySelectorAll('.carousel');
 
-    loadProjects();
+    carousels.forEach((carousel) => {
+        const images = Array.from(carousel.querySelectorAll('.carousel-img'));
+        const prevButton = carousel.querySelector('.prev');
+        const nextButton = carousel.querySelector('.next');
 
-});
+        if (!images.length) return;
 
+        let currentIndex = 0;
 
-// =========================
-// CHARGER PROJETS JSON
-// =========================
+        const showSlide = (index) => {
+            currentIndex = (index + images.length) % images.length;
+            images.forEach((image, imageIndex) => {
+                image.classList.toggle('active', imageIndex === currentIndex);
+            });
+        };
 
-async function loadProjects() {
+        prevButton?.addEventListener('click', () => showSlide(currentIndex - 1));
+        nextButton?.addEventListener('click', () => showSlide(currentIndex + 1));
 
-    try {
-
-        // =========================
-        // FETCH JSON
-        // =========================
-
-        const response = await fetch('./data/projects.json');
-
-        const projects = await response.json();
-
-
-        // =========================
-        // GENERER CARDS
-        // =========================
-
-        displayProjects(projects);
-
-    }
-
-    catch (error) {
-
-        console.error(
-            'Erreur chargement projets :',
-            error
-        );
-
-    }
-
-}
-
-
-// =========================
-// AFFICHER PROJETS
-// =========================
-
-function displayProjects(projects) {
-
-    // =========================
-    // CONTAINER
-    // =========================
-
-    const projectsContainer = document.querySelector(
-        '.projects-carousel'
-    );
-
-
-    // Vérification
-
-    if (!projectsContainer) return;
-
-
-    // =========================
-    // RESET
-    // =========================
-
-    projectsContainer.innerHTML = '';
-
-
-    // =========================
-    // BOUCLE PROJETS
-    // =========================
-
-    projects.forEach(project => {
-
-        // =========================
-        // CARD
-        // =========================
-
-        const projectCard = document.createElement('div');
-
-        projectCard.classList.add('project-card');
-
-
-        // =========================
-        // TEMPLATE HTML
-        // =========================
-
-        projectCard.innerHTML = `
-
-            <a href="./projects.html?id=${project.id}">
-
-                <img
-                    src="${project.image}"
-                    alt="${project.title}"
-                >
-
-                <h3>
-                    ${project.title}
-                </h3>
-
-                <p>
-                    ${project.description}
-                </p>
-
-            </a>
-
-        `;
-
-
-        // =========================
-        // AJOUT DOM
-        // =========================
-
-        projectsContainer.appendChild(projectCard);
-
+        showSlide(0);
     });
-
-}
+});
